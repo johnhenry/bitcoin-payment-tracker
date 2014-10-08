@@ -1,0 +1,32 @@
+{
+  "name": "Bitcoin Payment Tracker",
+  "description": "Track Bitcoin Payments Through Web Sockets",
+  "keywords": [
+    "bitcoin",
+    "toshi",
+    "real-time",
+    "address",
+    "socket",
+    "track",
+    "tracker"
+  ],
+  "repository": "https://github.com/johnhenry/bitcoin-payment-tracker",
+  "env": {
+    "TOSHI_INSTANCE": {
+        "description": "Toshi API Server",
+        "value" : "https://bitcoin.toshi.io"
+    },
+    "TOSHI_API_VERSION": {
+        "description": "Toshi API Version",
+        "value" : "v0"
+    },
+    "MAX_CONFIRMATIONS": {
+        "description": "Max number of confirmations to broadcast.",
+        "value" : "6"
+    },
+    "INTERVAL": {
+        "description": "Interval at which to broadcast unconfirmed payments. (milliseconds)",
+        "value" : "5000"
+    }
+  }
+}
